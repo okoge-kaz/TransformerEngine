@@ -26,6 +26,8 @@ pip install --upgrade wheel cmake ninja
 
 pip install --pre torch --index-url https://download.pytorch.org/whl/nightly/cu128 --no-cache-dir
 
+pip install pybind11
+
 # transformer engine v2.2 or later
 cudnn_root="/opt/share/modules/cudnn/9.8.0.87_cuda12"
 
@@ -37,5 +39,10 @@ export CUDNN_PATH=$cudnn_root
 export CUDNN_INCLUDE_DIR=$cudnn_root/include
 export CUDNN_LIBRARY_DIR=$cudnn_root/lib
 export CUDNN_ROOT_DIR=$cudnn_root
+
+git clone https://github.com/NVIDIA/TransformerEngine.git
+git submodule update --init --recursive
+
+export NVTE_FRAMEWORK=pytorch
 
 pip install -e .
