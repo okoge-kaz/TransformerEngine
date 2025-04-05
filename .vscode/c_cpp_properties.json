@@ -1,0 +1,21 @@
+{
+  "configurations": [
+      {
+          "name": "Linux",
+          "includePath": [
+              "${workspaceFolder}/**",
+              "/opt/share/modules/cuda/12.8.1/include",
+              "/opt/share/modules/cudnn/9.8.0.87_cuda12/include",
+              "/home/group_d2f6d7/kazuki_fujii/src/pytorch",
+              "/home/group_d2f6d7/kazuki_fujii/src/pytorch/third_party/googletest/googletest/include",
+              "/home/group_d2f6d7/kazuki_fujii/src/pytorch/third_party/cutlass/include/"
+          ],
+          "defines": [],
+          "compilerPath": "/opt/share/modules/cuda/12.8.1/bin/nvcc",
+          "cStandard": "c17",
+          "intelliSenseMode": "linux-gcc-x64",
+          "cppStandard": "gnu++20"
+      }
+  ],
+  "version": 4
+}
